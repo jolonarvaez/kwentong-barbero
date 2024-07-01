@@ -1,3 +1,6 @@
+"use client";
+
+import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import NavLink from "../reusables/nav-links";
 import { Button } from "../ui/button";
@@ -11,6 +14,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { useEffect } from "react";
 
 const links = [
   {
@@ -32,6 +36,11 @@ const links = [
 ];
 
 export default function Navbar() {
+  const { scrollYProgress } = useScroll();
+  const logoScale = useTransform(() =>
+    Math.max(290 / (1 + scrollYProgress.get()), 145)
+  );
+
   return (
     <nav className="bg-black text-white py-6 px-4">
       {/* Desktop Nav */}
@@ -42,7 +51,7 @@ export default function Navbar() {
         <div>
           <NavLink href={links[1].href}>{links[1].title}</NavLink>
         </div>
-        <div>
+        <motion.div style={{ width: logoScale }}>
           <NavLink href="/">
             <Image
               src="/kb-logo.png"
@@ -50,12 +59,12 @@ export default function Navbar() {
               width={512}
               height={512}
               style={{
-                width: 290,
+                width: "max(100%, 290px)",
                 height: "auto",
               }}
             />
           </NavLink>
-        </div>
+        </motion.div>
         <div>
           <NavLink href={links[2].href}>{links[2].title}</NavLink>
         </div>
