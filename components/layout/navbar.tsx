@@ -55,7 +55,7 @@ export default function Navbar() {
           <NavLink href="/products">Products</NavLink>
         </div>
         <div>
-          <Link href="/contact">Contact</Link>
+          <NavLink href="/contact">Contact</NavLink>
         </div>
       </div>
     </nav>

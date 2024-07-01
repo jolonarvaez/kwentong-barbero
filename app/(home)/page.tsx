@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Section } from "./components";
 import NavLink from "@/components/reusables/nav-links";
+import LinkButton from "@/components/reusables/link-button";
 
 export default function Home() {
   return (
@@ -184,12 +185,7 @@ export default function Home() {
             <h3>SM City Baguio</h3>
             <p>Mon - Thurs | 10am - 9pm</p>
             <p>Fri - Sun | 10am - 10pm</p>
-            <NavLink
-              href="/"
-              className="bg-[#A38748] text-white px-6 py-2 rounded"
-            >
-              View on Maps
-            </NavLink>
+            <LinkButton href="/">View on Maps</LinkButton>
           </div>
         </div>
       </Section>
