@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Section } from "./components";
 import NavLink from "@/components/reusables/nav-links";
 import LinkButton from "@/components/reusables/link-button";
+import { ContactForm } from "./client-components";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
 
       {/* Our story */}
       <Section>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="col-span-2">
             <h2>Our Story</h2>
             <p>
@@ -51,7 +52,7 @@ export default function Home() {
 
       {/* After our story */}
       <Section className="bg-black">
-        <div className="grid grid-cols-3 gap-6 p-6 text-white ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 text-white ">
           <div className="flex flex-col">
             <img src="https://via.placeholder.com/100" alt="" />
             <h2>Best Barebrs</h2>
@@ -135,7 +136,7 @@ export default function Home() {
           <h2>Our Locations</h2>
         </div>
 
-        <div className="grid grid-cols-3 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           <div
             className="h-[250px] w-[250px] rounded flex flex-col items-center justify-center"
             style={{
@@ -186,6 +187,25 @@ export default function Home() {
             <p>Mon - Thurs | 10am - 9pm</p>
             <p>Fri - Sun | 10am - 10pm</p>
             <LinkButton href="/">View on Maps</LinkButton>
+          </div>
+        </div>
+      </Section>
+
+      {/* Contact us */}
+      <Section className="bg-[#A38748]">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="flex flex-col justify-center items-center gap-4">
+            <Image
+              src="/kb-logo-2.png"
+              alt="Kwentong Barbero"
+              width={1024}
+              height={1024}
+              style={{ width: 275, height: "auto" }}
+            />
+            <h2 className="text-3xl font-bold text-white">Contact Us</h2>
+          </div>
+          <div>
+            <ContactForm />
           </div>
         </div>
       </Section>
