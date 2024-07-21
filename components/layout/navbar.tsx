@@ -42,7 +42,7 @@ export default function Navbar() {
   );
 
   return (
-    <nav className="bg-black text-white py-6 px-4">
+    <nav className="bg-dark-blue text-white py-6 px-4">
       {/* Desktop Nav */}
       <div className="hidden md:flex justify-center gap-6 items-center max-w-screen-lg mx-auto">
         <div>

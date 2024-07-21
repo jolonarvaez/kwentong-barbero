@@ -112,7 +112,7 @@ export default function Home() {
       </Section>
 
       {/* After our story */}
-      <Section className='bg-black text-center mb-10'>
+      <Section className='bg-dark-blue text-center mb-10'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6 p-6 text-white '>
           <div className='flex flex-col'>
             <img src='./legacy.png' alt='legacy' />
