@@ -111,10 +111,10 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* After our story */}
-      <Section className='bg-dark-blue text-center mb-10'>
+      {/* 3 Desciption */}
+      <Section className='bg-dark-blue text-center py-20'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6 p-6 text-white '>
-          <div className='flex flex-col'>
+          <div className='flex flex-col space-y-5'>
             <img src='./legacy.png' alt='legacy' />
             <h2
               className='font-bold'
@@ -137,7 +137,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className='flex flex-col'>
+          <div className='flex flex-col space-y-5'>
             <img src='./craftsmanship.png' alt='craftsmanship' />
             <h2
               className='font-bold'
@@ -159,7 +159,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className='flex flex-col'>
+          <div className='flex flex-col space-y-5'>
             <img src='./vintage.png' alt='vintage' />
             <h2
               className='font-bold'
@@ -182,7 +182,7 @@ export default function Home() {
       </Section>
 
       {/* Our Locations */}
-      <Section className='mb-10'>
+      <Section className='mt-10'>
         <div className='flex flex-col items-center gap-6 mb-10'>
           <img
             src='/kb-archway-black.png'
