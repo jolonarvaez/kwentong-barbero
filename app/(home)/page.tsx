@@ -4,8 +4,11 @@ import ProductCard from "@/components/reusables/product-card";
 import Image from "next/image";
 import { ContactForm } from "./client-components";
 import { Section } from "./components";
+import Locations from "@/components/reusables/locations";
 
 export default function Home() {
+  const locations = require("../../constants/locations.json");
+
   return (
     <main className="h-full">
       {/* Masthead */}
@@ -189,57 +192,9 @@ export default function Home() {
         </div>
 
         <div className="flex flex-wrap justify-center gap-6 text-white">
-          <div
-            className="h-[250px] w-[250px] rounded flex flex-col items-center justify-center"
-            style={{
-              backgroundImage: "url(./sm-baguio.png)",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-            }}
-          >
-            <h3>SM City Baguio</h3>
-            <p>Mon - Thurs | 10am - 9pm</p>
-            <p>Fri - Sun | 10am - 10pm</p>
-            <NavLink
-              href="/"
-              className="bg-[#A38748] text-white px-6 py-2 rounded"
-            >
-              View on Maps
-            </NavLink>
-          </div>
-
-          <div
-            className="h-[250px] w-[250px] rounded flex flex-col items-center justify-center"
-            style={{
-              backgroundImage: "url(./holiday-park-hotel.png)",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-            }}
-          >
-            <h3>SM City Baguio</h3>
-            <p>Mon - Thurs | 10am - 9pm</p>
-            <p>Fri - Sun | 10am - 10pm</p>
-            <NavLink
-              href="/"
-              className="bg-[#A38748] text-white px-6 py-2 rounded"
-            >
-              View on Maps
-            </NavLink>
-          </div>
-
-          <div
-            className="h-[250px] w-[250px] rounded flex flex-col items-center justify-center"
-            style={{
-              backgroundImage: "url(./sm-urdaneta.png)",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-            }}
-          >
-            <h3>SM City Baguio</h3>
-            <p>Mon - Thurs | 10am - 9pm</p>
-            <p>Fri - Sun | 10am - 10pm</p>
-            <LinkButton href="/">View on Maps</LinkButton>
-          </div>
+          {locations.map((location: any, index: any) => (
+            <Locations key={index} {...location} />
+          ))}
         </div>
       </Section>
 
