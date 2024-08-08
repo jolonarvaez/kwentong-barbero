@@ -283,16 +283,15 @@ export default function Home() {
       </Section>
 
       {/* Contact us */}
-      <Section className="bg-[#A38748]">
+      <Section className="bg-[url('/contact-us-photo.png')] bg-cover bg-center py-10 lg:py-24">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="flex flex-col justify-center items-center gap-4">
-            <Image
+            <img
               src="/kb-logo-2.png"
               alt="Kwentong Barbero"
-              width={1024}
-              height={1024}
-              style={{ width: 275, height: "auto" }}
+              className="w-48 md:w-72 h-auto"
             />
+
             <h2 className="text-3xl font-bold text-white">Contact Us</h2>
           </div>
           <div>
