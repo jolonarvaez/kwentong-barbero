@@ -1,55 +1,55 @@
-import LinkButton from '@/components/reusables/link-button';
-import NavLink from '@/components/reusables/nav-links';
-import ProductCard from '@/components/reusables/product-card';
-import Image from 'next/image';
-import { ContactForm } from './client-components';
-import { Section } from './components';
+import LinkButton from "@/components/reusables/link-button";
+import NavLink from "@/components/reusables/nav-links";
+import ProductCard from "@/components/reusables/product-card";
+import Image from "next/image";
+import { ContactForm } from "./client-components";
+import { Section } from "./components";
 
 export default function Home() {
   return (
-    <main className='h-full'>
+    <main className="h-full">
       {/* Masthead */}
       <Section className="bg-[url('/landing-page.png')] bg-no-repeat bg-cover bg-center">
-        <div className='h-[720px] flex justify-center items-center'>
-          <div className='flex flex-col items-center text-white'>
+        <div className="h-[720px] flex justify-center items-center">
+          <div className="flex flex-col items-center text-white">
             <img
-              className='mr-5'
-              src='./kb-patch-1-white.png'
-              alt='kb-logo'
+              className="mr-5"
+              src="./kb-patch-1-white.png"
+              alt="kb-logo"
               style={{
-                objectFit: 'contain',
-                height: '15.625rem',
+                objectFit: "contain",
+                height: "15.625rem",
               }}
             />
             <h1
-              className='font-bold'
+              className="font-bold"
               style={{
-                fontSize: '4.5rem',
+                fontSize: "4.5rem",
               }}
             >
               A shop that shears, shaves
             </h1>
             <h1
-              className='font-bold'
+              className="font-bold"
               style={{
-                fontSize: '4.5rem',
+                fontSize: "4.5rem",
               }}
             >
               & shines so you stay sharp.
             </h1>
             <p
-              className='mb-2'
+              className="mb-2"
               style={{
-                fontSize: '1.5rem',
+                fontSize: "1.5rem",
               }}
             >
               Find us at:
             </p>
-            <div className='flex flex-row space-x-4'>
-              <LinkButton href='/' leftSideIcon='/facebook-icon.png'>
+            <div className="flex flex-row space-x-4">
+              <LinkButton href="/" leftSideIcon="/facebook-icon.png">
                 Facebook
               </LinkButton>
-              <LinkButton href='/' leftSideIcon='/instagram-icon.png'>
+              <LinkButton href="/" leftSideIcon="/instagram-icon.png">
                 Instagram
               </LinkButton>
             </div>
@@ -59,22 +59,22 @@ export default function Home() {
 
       {/* Our story */}
       <Section>
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-6'>
-          <div className='col-span-2'>
-            <div className='flex flex-row items-center mb-4'>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-10 lg:py-24">
+          <div className="col-span-2">
+            <div className="flex flex-row items-center mb-4">
               <img
-                className='mr-5'
-                src='/kb-patch-3-black.png'
-                alt='facebook-logo'
+                className="mr-5"
+                src="/kb-patch-3-black.png"
+                alt="facebook-logo"
                 style={{
-                  objectFit: 'contain',
-                  height: '5.313rem',
+                  objectFit: "contain",
+                  height: "5.313rem",
                 }}
               />
               <h2
-                className='font-bold'
+                className="font-bold"
                 style={{
-                  fontSize: '2.875rem',
+                  fontSize: "2.875rem",
                 }}
               >
                 Our Story
@@ -83,7 +83,7 @@ export default function Home() {
 
             <p
               style={{
-                fontSize: '1.125rem',
+                fontSize: "1.125rem",
               }}
             >
               Kwentong Barbero isn't just a place for quick haircuts—it's a home
@@ -94,32 +94,32 @@ export default function Home() {
               experience since its debut in September 2002.
             </p>
           </div>
-          <div className='w-full'>
+          <div className="w-full">
             <img
-              src='https://via.placeholder.com/100'
-              className='w-full h-full'
-              alt=''
+              src="https://via.placeholder.com/100"
+              className="w-full h-full"
+              alt=""
             />
           </div>
-          <div className='w-full'>
+          <div className="w-full">
             <img
-              src='https://via.placeholder.com/100'
-              className='w-full h-full'
-              alt=''
+              src="https://via.placeholder.com/100"
+              className="w-full h-full"
+              alt=""
             />
           </div>
         </div>
       </Section>
 
       {/* 3 Desciption */}
-      <Section className='bg-dark-blue text-center py-20'>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-6 p-6 text-white '>
-          <div className='flex flex-col space-y-5'>
-            <img src='./legacy.png' alt='legacy' />
+      <Section className="bg-dark-blue text-center py-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 text-white ">
+          <div className="flex flex-col space-y-5">
+            <img src="./legacy.png" alt="legacy" />
             <h2
-              className='font-bold'
+              className="font-bold"
               style={{
-                fontSize: '2.875rem',
+                fontSize: "2.875rem",
               }}
             >
               Legacy
@@ -137,12 +137,12 @@ export default function Home() {
             </p>
           </div>
 
-          <div className='flex flex-col space-y-5'>
-            <img src='./craftsmanship.png' alt='craftsmanship' />
+          <div className="flex flex-col space-y-5">
+            <img src="./craftsmanship.png" alt="craftsmanship" />
             <h2
-              className='font-bold'
+              className="font-bold"
               style={{
-                fontSize: '2.875rem',
+                fontSize: "2.875rem",
               }}
             >
               Craftsmanship
@@ -159,12 +159,12 @@ export default function Home() {
             </p>
           </div>
 
-          <div className='flex flex-col space-y-5'>
-            <img src='./vintage.png' alt='vintage' />
+          <div className="flex flex-col space-y-5">
+            <img src="./vintage.png" alt="vintage" />
             <h2
-              className='font-bold'
+              className="font-bold"
               style={{
-                fontSize: '2.875rem',
+                fontSize: "2.875rem",
               }}
             >
               Vintage
@@ -182,131 +182,131 @@ export default function Home() {
       </Section>
 
       {/* Our Locations */}
-      <Section className='mt-10'>
-        <div className='flex flex-col items-center gap-6 mb-10'>
+      <Section className="mt-10">
+        <div className="flex flex-col items-center gap-6 mb-10">
           <img
-            src='/kb-archway-black.png'
-            alt='kb-archway-black.png'
+            src="/kb-archway-black.png"
+            alt="kb-archway-black.png"
             style={{
-              height: '11rem',
+              height: "11rem",
             }}
           />
           <h2
-            className='font-bold'
+            className="font-bold"
             style={{
-              fontSize: '3.625rem',
+              fontSize: "3.625rem",
             }}
           >
             Our Locations
           </h2>
         </div>
 
-        <div className='flex flex-wrap justify-center gap-6 text-white'>
+        <div className="flex flex-wrap justify-center gap-6 text-white">
           <div
-            className='h-[250px] w-[250px] rounded flex flex-col items-center justify-center'
+            className="h-[250px] w-[250px] rounded flex flex-col items-center justify-center"
             style={{
-              backgroundImage: 'url(./sm-baguio.png)',
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
+              backgroundImage: "url(./sm-baguio.png)",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
             }}
           >
             <h3>SM City Baguio</h3>
             <p>Mon - Thurs | 10am - 9pm</p>
             <p>Fri - Sun | 10am - 10pm</p>
             <NavLink
-              href='/'
-              className='bg-[#A38748] text-white px-6 py-2 rounded'
+              href="/"
+              className="bg-[#A38748] text-white px-6 py-2 rounded"
             >
               View on Maps
             </NavLink>
           </div>
 
           <div
-            className='h-[250px] w-[250px] rounded flex flex-col items-center justify-center'
+            className="h-[250px] w-[250px] rounded flex flex-col items-center justify-center"
             style={{
-              backgroundImage: 'url(./holiday-park-hotel.png)',
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
+              backgroundImage: "url(./holiday-park-hotel.png)",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
             }}
           >
             <h3>SM City Baguio</h3>
             <p>Mon - Thurs | 10am - 9pm</p>
             <p>Fri - Sun | 10am - 10pm</p>
             <NavLink
-              href='/'
-              className='bg-[#A38748] text-white px-6 py-2 rounded'
+              href="/"
+              className="bg-[#A38748] text-white px-6 py-2 rounded"
             >
               View on Maps
             </NavLink>
           </div>
 
           <div
-            className='h-[250px] w-[250px] rounded flex flex-col items-center justify-center'
+            className="h-[250px] w-[250px] rounded flex flex-col items-center justify-center"
             style={{
-              backgroundImage: 'url(./sm-urdaneta.png)',
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
+              backgroundImage: "url(./sm-urdaneta.png)",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
             }}
           >
             <h3>SM City Baguio</h3>
             <p>Mon - Thurs | 10am - 9pm</p>
             <p>Fri - Sun | 10am - 10pm</p>
-            <LinkButton href='/'>View on Maps</LinkButton>
+            <LinkButton href="/">View on Maps</LinkButton>
           </div>
         </div>
       </Section>
 
       {/* What We Sell */}
       <Section>
-        <div className='flex flex-col items-center gap-6 mb-10'>
+        <div className="flex flex-col items-center gap-6 mb-10">
           <h2
-            className='font-bold'
+            className="font-bold"
             style={{
-              fontSize: '3.625rem',
+              fontSize: "3.625rem",
             }}
           >
             What We Sell
           </h2>
         </div>
-        <div className='flex flex-wrap justify-center gap-6 '>
+        <div className="flex flex-wrap justify-center gap-6 ">
           <ProductCard
-            imageSrc='https://via.placeholder.com/300'
-            productName='Product 1'
-            price='300'
+            imageSrc="https://via.placeholder.com/300"
+            productName="Product 1"
+            price="300"
           />
           <ProductCard
-            imageSrc='https://via.placeholder.com/300'
-            productName='Product 1'
-            price='300'
+            imageSrc="https://via.placeholder.com/300"
+            productName="Product 1"
+            price="300"
           />
           <ProductCard
-            imageSrc='https://via.placeholder.com/300'
-            productName='Product 1'
-            price='300'
+            imageSrc="https://via.placeholder.com/300"
+            productName="Product 1"
+            price="300"
           />
           <ProductCard
-            imageSrc='https://via.placeholder.com/300'
-            productName='Product 1'
-            price='300'
+            imageSrc="https://via.placeholder.com/300"
+            productName="Product 1"
+            price="300"
           />
         </div>
-        <div className='flex flex-wrap justify-center'>
-          <LinkButton href='/'>View All</LinkButton>
+        <div className="flex flex-wrap justify-center">
+          <LinkButton href="/">View All</LinkButton>
         </div>
       </Section>
 
       {/* Contact us */}
-      <Section className='bg-[#A38748]'>
-        <div className='grid grid-cols-1 md:grid-cols-2'>
-          <div className='flex flex-col justify-center items-center gap-4'>
+      <Section className="bg-[#A38748]">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="flex flex-col justify-center items-center gap-4">
             <Image
-              src='/kb-logo-2.png'
-              alt='Kwentong Barbero'
+              src="/kb-logo-2.png"
+              alt="Kwentong Barbero"
               width={1024}
               height={1024}
-              style={{ width: 275, height: 'auto' }}
+              style={{ width: 275, height: "auto" }}
             />
-            <h2 className='text-3xl font-bold text-white'>Contact Us</h2>
+            <h2 className="text-3xl font-bold text-white">Contact Us</h2>
           </div>
           <div>
             <ContactForm />
