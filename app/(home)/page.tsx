@@ -11,9 +11,9 @@ export default function Home() {
       {/* Masthead */}
       <Section className="bg-[url('/landing-page.png')] bg-no-repeat bg-cover bg-center">
         <div className="h-[720px] flex justify-center items-center">
-          <div className="flex flex-col items-center text-white">
+          <div className="flex flex-col items-center gap-5 text-white">
             <img
-              className="mr-5"
+              className=""
               src="./kb-patch-1-white.png"
               alt="kb-logo"
               style={{
@@ -21,22 +21,9 @@ export default function Home() {
                 height: "15.625rem",
               }}
             />
-            <h1
-              className="font-bold"
-              style={{
-                fontSize: "4.5rem",
-              }}
-            >
-              A shop that shears, shaves
-            </h1>
-            <h1
-              className="font-bold"
-              style={{
-                fontSize: "4.5rem",
-              }}
-            >
-              & shines so you stay sharp.
-            </h1>
+            <div className="text-center font-bold text-4xl md:text-6xl max-w-[896px]">
+              A shop that shears, shaves & shines so you stay sharp.
+            </div>
             <p
               className="mb-2"
               style={{
