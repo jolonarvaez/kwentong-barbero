@@ -18,8 +18,12 @@ import { useEffect } from "react";
 
 const links = [
   {
-    title: "About Us",
+    title: "Our Story",
     href: "/about-us",
+  },
+  {
+    title: "Services",
+    href: "/services",
   },
   {
     title: "Location",
@@ -30,46 +34,45 @@ const links = [
     href: "/products",
   },
   {
+    title: "Blogs",
+    href: "/blogs",
+  },
+  {
     title: "Contact",
     href: "/contact",
   },
 ];
 
 export default function Navbar() {
-  const { scrollYProgress } = useScroll();
-  const logoScale = useTransform(() =>
-    Math.max(290 / (1 + scrollYProgress.get()), 145)
-  );
-
   return (
     <nav className="bg-dark-blue text-white py-6 px-4">
       {/* Desktop Nav */}
-      <div className="hidden md:flex justify-center gap-6 items-center max-w-screen-lg mx-auto">
+      <div className="hidden md:flex justify-evenly items-center max-w-screen-lg mx-auto">
         <div>
           <NavLink href={links[0].href}>{links[0].title}</NavLink>
         </div>
         <div>
           <NavLink href={links[1].href}>{links[1].title}</NavLink>
         </div>
-        <motion.div style={{ width: logoScale }}>
-          <NavLink href="/">
-            <Image
-              src="/kb-logo.png"
-              alt="Kwentong Barbero"
-              width={512}
-              height={512}
-              style={{
-                width: "max(100%, 290px)",
-                height: "auto",
-              }}
-            />
-          </NavLink>
-        </motion.div>
         <div>
           <NavLink href={links[2].href}>{links[2].title}</NavLink>
         </div>
+        <NavLink href="/">
+          <Image
+            src="/kb-logo.png"
+            alt="Kwentong Barbero"
+            width={200}
+            height={150}
+          />
+        </NavLink>
         <div>
           <NavLink href={links[3].href}>{links[3].title}</NavLink>
+        </div>
+        <div>
+          <NavLink href={links[4].href}>{links[4].title}</NavLink>
+        </div>
+        <div>
+          <NavLink href={links[5].href}>{links[5].title}</NavLink>
         </div>
       </div>
 
