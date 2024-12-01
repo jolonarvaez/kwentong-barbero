@@ -38,7 +38,7 @@ const links = [
     href: "/blogs",
   },
   {
-    title: "Contact",
+    title: "Contact Us",
     href: "/contact",
   },
 ];
