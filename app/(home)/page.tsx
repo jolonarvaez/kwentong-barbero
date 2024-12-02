@@ -5,7 +5,8 @@ import Image from "next/image";
 import { ContactForm } from "./client-components";
 import { Section } from "./components";
 import Locations from "@/components/reusables/locations";
-
+import { SOCMED_LINKS } from "@/constants/config";
+import { Button } from "@/components/ui/button";
 export default function Home() {
   const locations = require("../../constants/locations.json");
 
@@ -36,10 +37,16 @@ export default function Home() {
               Find us at:
             </p>
             <div className="flex flex-row space-x-4">
-              <LinkButton href="/" leftSideIcon="/facebook-icon.png">
+              <LinkButton
+                href={SOCMED_LINKS.FACEBOOK}
+                leftSideIcon="/facebook-icon.png"
+              >
                 Facebook
               </LinkButton>
-              <LinkButton href="/" leftSideIcon="/instagram-icon.png">
+              <LinkButton
+                href={SOCMED_LINKS.INSTAGRAM}
+                leftSideIcon="/instagram-icon.png"
+              >
                 Instagram
               </LinkButton>
             </div>
@@ -49,7 +56,7 @@ export default function Home() {
 
       {/* Our story */}
       <Section>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-10 lg:py-24">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 py-10 lg:py-24">
           <div className="col-span-2">
             <div className="flex flex-row items-center mb-4">
               <img
@@ -75,6 +82,7 @@ export default function Home() {
               style={{
                 fontSize: "1.125rem",
               }}
+              className="text-center sm:text-left"
             >
               Kwentong Barbero isn't just a place for quick haircuts—it's a home
               where gentlemen enjoy relaxation, engaging conversations, and
@@ -86,19 +94,25 @@ export default function Home() {
           </div>
           <div className="w-full">
             <img
-              src="https://via.placeholder.com/100"
-              className="w-full h-full"
+              src="./our-story/chair.png"
+              className="w-full h-full bg-cover bg-center"
               alt=""
             />
           </div>
           <div className="w-full">
             <img
-              src="https://via.placeholder.com/100"
-              className="w-full h-full"
+              src="./our-story/emilio.jpg"
+              className="w-full h-full bg-cover bg-center"
               alt=""
             />
           </div>
         </div>
+        <a href="/our-story">
+          {" "}
+          <Button className="w-full sm:w-auto px-12 mx-auto">
+            More of our Story
+          </Button>
+        </a>
       </Section>
 
       {/* 3 Desciption */}

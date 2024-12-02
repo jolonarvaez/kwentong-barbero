@@ -19,7 +19,7 @@ import { useEffect } from "react";
 const links = [
   {
     title: "Our Story",
-    href: "/about-us",
+    href: "/our-story",
   },
   {
     title: "Services",
