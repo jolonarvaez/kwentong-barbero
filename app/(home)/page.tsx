@@ -106,13 +106,13 @@ export default function Home() {
               alt=""
             />
           </div>
+          <a href="/our-story">
+            {" "}
+            <Button className="w-full sm:w-auto px-12 mx-auto">
+              More of our Story
+            </Button>
+          </a>
         </div>
-        <a href="/our-story">
-          {" "}
-          <Button className="w-full sm:w-auto px-12 mx-auto">
-            More of our Story
-          </Button>
-        </a>
       </Section>
 
       {/* 3 Desciption */}
