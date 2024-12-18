@@ -1,4 +1,11 @@
 import { Section, Title } from "./components";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function OurStory() {
   return (
@@ -17,8 +24,8 @@ export default function OurStory() {
             />
           </div>
         </Section>
-        <Section className="sm:py-14 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <Section className="sm:py-14 py-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="font-semibold md:text-3xl text-2xl flex flex-col justify-center">
               A Shop that Shears, Shaves and Shines so You Stay Sharp
             </div>
@@ -33,23 +40,32 @@ export default function OurStory() {
         </Section>
         <Section>
           <div className="sm:space-y-4 space-y-6">
-            <Title> Humble beginnings and vision</Title>
-            <p>
-              Richard was having a haircut back then at his old barbershop along
-              Session Road when his barber told him that the shop was about to
-              fold up. The business was for sale and his barber asked him if he
-              was interested. A typical conversation at the barbershop - small
-              talk leading to big ideas. This inspired Richard to conceptualize
-              a first class traditional full service barbershop, a novel in the
-              city.
-            </p>
-            <p>
-              When husband and wife Richard and Marissa Narvaez scored a space
-              for a grooming establishment in Baguio city, they envisioned a
-              throwback barber shop that would offer hair services both current
-              and classy, while paying homage to a more genteel time of
-              family-owned shops and service with a personal touch.{" "}
-            </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <img
+                src="./our-story/humble.jpg"
+                className="w-full  object-cover bg-center max-h-[350px] mx-auto"
+              />
+              <div className="sm:space-y-4 space-y-6">
+                <Title> Humble beginnings and vision</Title>
+                <p>
+                  Richard was having a haircut back then at his old barbershop
+                  along Session Road when his barber told him that the shop was
+                  about to fold up. The business was for sale and his barber
+                  asked him if he was interested. A typical conversation at the
+                  barbershop - small talk leading to big ideas. This inspired
+                  Richard to conceptualize a first class traditional full
+                  service barbershop, a novel in the city.
+                </p>
+                <p>
+                  When husband and wife Richard and Marissa Narvaez scored a
+                  space for a grooming establishment in Baguio city, they
+                  envisioned a throwback barber shop that would offer hair
+                  services both current and classy, while paying homage to a
+                  more genteel time of family-owned shops and service with a
+                  personal touch.{" "}
+                </p>
+              </div>
+            </div>
             <p>
               Since its debut in September 2002, this nostalgic barbershop has
               blended modern grooming with timeless hospitality, earning a
@@ -62,7 +78,6 @@ export default function OurStory() {
             </p>
           </div>
         </Section>
-        <Section></Section>
       </div>
 
       <Section className="text-white bg-dark-blue py-16">
@@ -70,19 +85,46 @@ export default function OurStory() {
           <Title className="text-center">
             Kwentong Barbero Through the Years
           </Title>
-          <p>
-            Kwentong Barbero burst onto the scene in September 2002 and was
-            initially located at the Porta Vaga Commercial Building. The
-            following year, the barbershop moved first to the Lower Ground Floor
-            of SM City Baguio on November 26 when the mall first opened in the
-            City of Pines. On March 16, 2016, another branch opened at Holiday
-            Park Hotel branch. Two years later, on May 3, Kwentong Barbero
-            opened its doors at SM City Urdaneta Central. When the pandemic hit,
-            the shop closed on March 16, 2020 but three months later, on June 7,
-            2020, the barbershop was again in full swing. On October 15, 2022,
-            the shop moved up to the 3rd floor of SM City Baguio, near Cinema 3
-            & 4.
-          </p>
+
+          <Carousel className="w-full max-w-2xl mx-auto">
+            <CarouselContent>
+              <CarouselItem >
+                {" "}
+                <p>
+                  Kwentong Barbero burst onto the scene in September 2002 and
+                  was initially located at the Porta Vaga Commercial Building.
+                  The following year, the barbershop moved first to the Lower
+                  Ground Floor of SM City Baguio on November 26 when the mall
+                  first opened in the City of Pines.
+                </p>
+              </CarouselItem>
+              <CarouselItem className="-z-50">
+                {" "}
+                <p>
+                  On March 16, 2016, another branch opened at Holiday Park Hotel
+                  branch and then two years later, on May 3 2018, Kwentong
+                  Barbero opened its doors at SM City Urdaneta Central.
+                </p>
+              </CarouselItem>
+              <CarouselItem className="-z-50">
+                {" "}
+                <p>
+                  When the pandemic hit, the shop closed on March 16, 2020 but
+                  three months later, on June 7, 2020, the barbershop was again
+                  in full swing.
+                </p>
+              </CarouselItem>
+              <CarouselItem className="-z-50">
+                {" "}
+                <p>
+                  On October 15, 2022, the shop moved up to the 3rd floor of SM
+                  City Baguio, near Cinema 3 & 4.
+                </p>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </Section>
       <Section className="py-16">
@@ -99,7 +141,10 @@ export default function OurStory() {
             the services come at a price that won't break the bank, which has
             come to be the norm in other swanky salons.
           </p>
-          <img className="w-full max-h-[450px] object-cover" src="./our-story/vintage2.jpg" />
+          <img
+            className="w-full max-h-[450px] object-cover"
+            src="./our-story/vintage2.jpg"
+          />
         </div>
       </Section>
       <Section className="py-16 bg-dark-blue">
