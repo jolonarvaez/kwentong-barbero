@@ -45,7 +45,7 @@ const links = [
 
 export default function Navbar() {
   return (
-    <nav className="bg-dark-blue text-white py-6 px-4 z-80">
+    <nav className="bg-dark-blue text-white py-6 px-4">
       {/* Desktop Nav */}
       <div className="hidden md:flex justify-evenly items-center max-w-screen-lg mx-auto">
         <div>
