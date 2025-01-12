@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col min-h-screen">
-        <section className="sticky top-0 w-full">
+        <section className="sticky top-0 w-full z-40">
           <Navbar />
         </section>
         <section className="flex-1 h-full">{children}</section>

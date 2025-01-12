@@ -12,17 +12,16 @@ export const ServiceItem = ({
   key,
 }: ServiceItemProps) => {
   return (
-    <div className="space-y-4 mx-auto -z-0" key={key}>
-      <div className="w-screen md:w-72 h-72 overflow-hidden">
+    <div className="space-y-4 mx-auto z-0" key={key}>
+      <div className="h-72">
         <img
           src={image}
-          className="w-full h-full transition-filter duration-300 ease-in-out blur-none hover:blur-sm"
+          loading="lazy"
+          className="h-full w-full object-cover bg-contain bg-center rounded-md"
         />
-        <div className="hover:visible hidden">
-          {description}
-        </div>
       </div>
-      <div className="text-lg">{name}</div>
+      <div className="text-xl font-medium">{name}</div>
+      <div className="">{description}</div>
     </div>
   );
 };

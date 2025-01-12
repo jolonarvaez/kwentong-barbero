@@ -1,5 +1,3 @@
-import { title } from "process";
-
 export const SOCMED_LINKS = {
   FACEBOOK: "https://www.facebook.com/kwentongbarberobarbershop",
   INSTAGRAM: "https://www.instagram.com/kwentongbarbero/",
@@ -54,12 +52,6 @@ export const SERVICES = {
       description:
         "Recharge in a 30 minutes full-body, relaxing basic massage that includes a soothing hot towel treatment and a customizable massage intensity, from light to hard.",
       image: "./services/30_min_body_massage.jpg",
-    },
-    {
-      name: "1 Hour Body Massage",
-      description:
-        "Recharge in a 1-hour full-body, relaxing basic massage that includes a soothing hot towel treatment and a customizable massage intensity, from light to hard.",
-      image: "./services/1_hour_body_massage.jpg",
     },
   ],
   PREMIUM_SERVICES: [
