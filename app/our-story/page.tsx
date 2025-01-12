@@ -1,12 +1,4 @@
 import { Section, Title } from "./components";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-
 export default function OurStory() {
   return (
     <main className="h-full">
@@ -32,7 +24,8 @@ export default function OurStory() {
             <p>
               There are barber shops that give record-time haircuts, and there
               are those that offer a whole experience of relaxation and good
-              conversation within delightful surroundings. Kwentong Barbero
+              conversation within delightful surroundings.{" "}
+              <span className="italic">Kwentong Barbero</span>
               falls into the latter subset and has become a venue for male
               day-cations as memorable as its name.
             </p>
@@ -85,46 +78,25 @@ export default function OurStory() {
           <Title className="text-center">
             Kwentong Barbero Through the Years
           </Title>
-
-          <Carousel className="w-full max-w-2xl mx-auto">
-            <CarouselContent>
-              <CarouselItem >
-                {" "}
-                <p>
-                  Kwentong Barbero burst onto the scene in September 2002 and
-                  was initially located at the Porta Vaga Commercial Building.
-                  The following year, the barbershop moved first to the Lower
-                  Ground Floor of SM City Baguio on November 26 when the mall
-                  first opened in the City of Pines.
-                </p>
-              </CarouselItem>
-              <CarouselItem className="-z-50">
-                {" "}
-                <p>
-                  On March 16, 2016, another branch opened at Holiday Park Hotel
-                  branch and then two years later, on May 3 2018, Kwentong
-                  Barbero opened its doors at SM City Urdaneta Central.
-                </p>
-              </CarouselItem>
-              <CarouselItem className="-z-50">
-                {" "}
-                <p>
-                  When the pandemic hit, the shop closed on March 16, 2020 but
-                  three months later, on June 7, 2020, the barbershop was again
-                  in full swing.
-                </p>
-              </CarouselItem>
-              <CarouselItem className="-z-50">
-                {" "}
-                <p>
-                  On October 15, 2022, the shop moved up to the 3rd floor of SM
-                  City Baguio, near Cinema 3 & 4.
-                </p>
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
+          <p>
+            <span className="italic">
+              <span className="italic">Kwentong Barbero</span>
+            </span>{" "}
+            burst onto the scene in September 2002 and was initially located at
+            the Porta Vaga Commercial Building. The following year, the
+            barbershop moved first to the Lower Ground Floor of SM City Baguio
+            on November 26 when the mall first opened in the City of Pines. On
+            March 16, 2016, another branch opened at Holiday Park Hotel branch.
+            Two years later, on May 3,{" "}
+            <span className="italic">
+              <span className="italic">Kwentong Barbero</span>
+            </span>
+            opened its doors at SM City Urdaneta Central. When the pandemic hit,
+            the shop closed on March 16, 2020 but three months later, on June 7,
+            2020, the barbershop was again in full swing. On October 15, 2022,
+            the shop moved up to the 3rd floor of SM City Baguio, near Cinema 3
+            & 4.{" "}
+          </p>
         </div>
       </Section>
       <Section className="py-16">
@@ -156,8 +128,9 @@ export default function OurStory() {
               short massage to obliterate tension is thrown in as a freebie. The
               body massage is anywhere from 15 minutes to an hour of sublime
               kneading to loosen tight spots and dissolve stress. Like any
-              self-respecting salon, Kwentong Barbero offers the obligatory hair
-              dye, hot oil and hair treatment
+              self-respecting salon,{" "}
+              <span className="italic">Kwentong Barbero</span> offers the
+              obligatory hair dye, hot oil and hair treatment
             </p>
             <p>
               But its authenticity as a traditional barber shop lies in the
@@ -181,7 +154,9 @@ export default function OurStory() {
       </Section>
       <div className="py-14 space-y-14">
         <Section className="">
-          <Title className="text-center">The Kwentong Barbero Barbers</Title>
+          <Title className="text-center">
+            The <span className="italic">Kwentong Barbero</span> Barbers
+          </Title>
         </Section>
         <img
           src="./our-story/barbers.png"
@@ -189,18 +164,20 @@ export default function OurStory() {
         />
         <Section>
           <p>
-            But the ultimate and inimitable charm of Kwentong Barbero is found
-            in the barbers themselves, who give you more than a haircut or a
-            soothing shave. Between the snap of the clippers and the buzz of a
-            razor are the sounds of conversation about sports, politics, and
-            life. It's not unusual for a barber to service three generations of
-            a family or witness a man's clean traditional Don Draper cut morph
-            into the receding hairline of Leo Di Caprio. Here, the barber-client
+            But the ultimate and inimitable charm of{" "}
+            <span className="italic">Kwentong Barbero</span> is found in the
+            barbers themselves, who give you more than a haircut or a soothing
+            shave. Between the snap of the clippers and the buzz of a razor are
+            the sounds of conversation about sports, politics, and life. It's
+            not unusual for a barber to service three generations of a family or
+            witness a man's clean traditional Don Draper cut morph into the
+            receding hairline of Leo Di Caprio. Here, the barber-client
             relationship doesn't end with good grooming. By the time your barber
             dusts you off, you would have, in all likelihood, made a friend
             you'll want to visit regularly. That's a quality that simply can't
-            be copied and is exactly what sets Kwentong Barbero apart from the
-            rest of the hair care industry.
+            be copied and is exactly what sets{" "}
+            <span className="italic">Kwentong Barbero</span> apart from the rest
+            of the hair care industry.
           </p>
         </Section>
       </div>
