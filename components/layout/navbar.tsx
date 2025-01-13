@@ -26,8 +26,8 @@ const links = [
     href: "/services",
   },
   {
-    title: "Location",
-    href: "/location",
+    title: "Locations",
+    href: "/#our-locations",
   },
   {
     title: "Products",
@@ -39,7 +39,7 @@ const links = [
   },
   {
     title: "Contact Us",
-    href: "/contact",
+    href: "/#contact-us",
   },
 ];
 

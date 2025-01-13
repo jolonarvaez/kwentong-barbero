@@ -56,7 +56,7 @@ export default function Home() {
 
       {/* Our story */}
       <Section>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 py-10 lg:py-24">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-10 lg:pt-24">
           <div className="col-span-2">
             <div className="flex flex-row items-center mb-4">
               <img
@@ -94,25 +94,23 @@ export default function Home() {
           </div>
           <div className="w-full">
             <img
-              src="./our-story/chair.png"
-              className="w-full h-full bg-cover bg-center"
+              src="./our-story/exceptional-1.jpg"
+              className="w-full h-full "
               alt=""
             />
           </div>
           <div className="w-full">
             <img
               src="./our-story/emilio.jpg"
-              className="w-full h-full bg-cover bg-center"
+              className="w-full h-full object-cover"
               alt=""
             />
           </div>
-          <a href="/our-story">
-            {" "}
-            <Button className="w-full sm:w-auto px-12 mx-auto">
-              More of our Story
-            </Button>
-          </a>
         </div>
+        <a href="/our-story">
+          {" "}
+          <Button className="px-12 my-10 mx-auto">More of Our Story</Button>
+        </a>
       </Section>
 
       {/* 3 Desciption */}
@@ -187,7 +185,10 @@ export default function Home() {
 
       {/* Our Locations */}
       <Section className="mt-10">
-        <div className="flex flex-col items-center gap-6 mb-10">
+        <div
+          className="flex flex-col items-center gap-6 mb-10"
+          id="our-locations"
+        >
           <img
             loading="lazy"
             src="/kb-archway-black.png"
@@ -254,7 +255,7 @@ export default function Home() {
 
       {/* Contact us */}
       <Section className="bg-[url('/contact-us-photo.png')] bg-cover bg-center py-10 lg:py-24">
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2" id="contact-us">
           <div className="flex flex-col justify-center items-center gap-4">
             <img
               loading="lazy"
