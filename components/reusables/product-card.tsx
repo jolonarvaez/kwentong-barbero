@@ -12,8 +12,8 @@ export default function ProductCard({
 }: Props) {
   return (
     <div>
-      <img src={imageSrc} alt={alt || ''} />
-      <h3 className='font-bold'>{productName}</h3>
+      <img loading="lazy" src={imageSrc} alt={alt || ""} />
+      <h3 className="font-bold">{productName}</h3>
       <p>P{price}</p>
     </div>
   );

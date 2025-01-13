@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { CSSProperties, PropsWithChildren } from 'react';
+import Link from "next/link";
+import { CSSProperties, PropsWithChildren } from "react";
 
 interface Props extends PropsWithChildren {
   href: string;
@@ -18,17 +18,18 @@ export default function NavLink({
   return (
     <Link
       href={href}
-      className={`hover:opacity-70 transition-opacity ${className || ''}`}
+      className={`hover:opacity-70 transition-opacity ${className || ""}`}
       style={style}
     >
-      <div className='flex flex-row content-center'>
+      <div className="flex flex-row content-center">
         {leftSideIcon && (
           <img
+            loading="lazy"
             src={leftSideIcon}
-            alt='facebook-logo'
-            className='mr-2'
+            alt="facebook-logo"
+            className="mr-2"
             style={{
-              objectFit: 'contain',
+              objectFit: "contain",
             }}
           />
         )}

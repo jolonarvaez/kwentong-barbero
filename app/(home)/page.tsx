@@ -119,7 +119,7 @@ export default function Home() {
       <Section className="bg-dark-blue text-center py-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 text-white ">
           <div className="flex flex-col space-y-5">
-            <img src="./legacy.png" alt="legacy" />
+            <img loading="lazy" src="./legacy.png" alt="legacy" />
             <h2
               className="font-bold"
               style={{
@@ -142,7 +142,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col space-y-5">
-            <img src="./craftsmanship.png" alt="craftsmanship" />
+            <img loading="lazy" src="./craftsmanship.png" alt="craftsmanship" />
             <h2
               className="font-bold"
               style={{
@@ -164,7 +164,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col space-y-5">
-            <img src="./vintage.png" alt="vintage" />
+            <img loading="lazy" src="./vintage.png" alt="vintage" />
             <h2
               className="font-bold"
               style={{
@@ -189,6 +189,7 @@ export default function Home() {
       <Section className="mt-10">
         <div className="flex flex-col items-center gap-6 mb-10">
           <img
+            loading="lazy"
             src="/kb-archway-black.png"
             alt="kb-archway-black.png"
             style={{
@@ -256,6 +257,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="flex flex-col justify-center items-center gap-4">
             <img
+              loading="lazy"
               src="/kb-logo-2.png"
               alt="Kwentong Barbero"
               className="w-48 md:w-72 h-auto"

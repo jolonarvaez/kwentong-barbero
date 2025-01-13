@@ -8,7 +8,11 @@ export default function ProductPage() {
         <div className="grid grid-cols-1 md:grid-cols-12 p-6">
           {/* Product Images */}
           <div className="md:col-span-5 flex flex-col gap-4">
-            <img src="https://via.placeholder.com/100" alt="Product Image" />
+            <img
+              loading="lazy"
+              src="https://via.placeholder.com/100"
+              alt="Product Image"
+            />
 
             <div>
               <ProductCarousel />

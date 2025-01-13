@@ -6,6 +6,7 @@ export default function OurStory() {
         <Section className="bg-[url('/landing-page.png')] bg-no-repeat bg-cover bg-center">
           <div className="flex justify-center items-center">
             <img
+              loading="lazy"
               className="my-28"
               src="./kb-patch-1-white.png"
               alt="kb-logo"
@@ -35,6 +36,7 @@ export default function OurStory() {
           <div className="sm:space-y-4 space-y-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <img
+                loading="lazy"
                 src="./our-story/humble.jpg"
                 className="w-full  object-cover bg-center max-h-[350px] mx-auto"
               />
@@ -114,6 +116,7 @@ export default function OurStory() {
             come to be the norm in other swanky salons.
           </p>
           <img
+            loading="lazy"
             className="w-full max-h-[450px] object-cover"
             src="./our-story/vintage2.jpg"
           />
@@ -142,10 +145,12 @@ export default function OurStory() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
             <img
+              loading="lazy"
               src="./our-story/exceptional-1.jpg"
               className="w-full md:max-w-[400px] object-cover bg-center max-h-[450px]"
             />
             <img
+              loading="lazy"
               src="./our-story/exceptional-3.jpg"
               className="w-full md:max-w-[400px] object-cover bg-center max-h-[450px]"
             />
@@ -159,6 +164,7 @@ export default function OurStory() {
           </Title>
         </Section>
         <img
+          loading="lazy"
           src="./our-story/barbers.png"
           className="w-screen min-h-[300px] max-h-[500px] bg-center object-cover"
         />

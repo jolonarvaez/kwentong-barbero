@@ -13,46 +13,25 @@ export const ProductCarousel = () => {
         <CarouselItem>
           <div className="grid grid-cols-4 gap-4">
             <img
+              loading="lazy"
               src="https://via.placeholder.com/100"
               alt="Product Grid Image"
               className="aspect-square w-full"
             />
             <img
+              loading="lazy"
               src="https://via.placeholder.com/100"
               alt="Product Grid Image"
               className="aspect-square w-full"
             />
             <img
+              loading="lazy"
               src="https://via.placeholder.com/100"
               alt="Product Grid Image"
               className="aspect-square w-full"
             />
             <img
-              src="https://via.placeholder.com/100"
-              alt="Product Grid Image"
-              className="aspect-square w-full"
-            />
-          </div>
-        </CarouselItem>
-
-        <CarouselItem>
-          <div className="grid grid-cols-4 gap-4">
-            <img
-              src="https://via.placeholder.com/100"
-              alt="Product Grid Image"
-              className="aspect-square w-full"
-            />
-            <img
-              src="https://via.placeholder.com/100"
-              alt="Product Grid Image"
-              className="aspect-square w-full"
-            />
-            <img
-              src="https://via.placeholder.com/100"
-              alt="Product Grid Image"
-              className="aspect-square w-full"
-            />
-            <img
+              loading="lazy"
               src="https://via.placeholder.com/100"
               alt="Product Grid Image"
               className="aspect-square w-full"
@@ -63,21 +42,54 @@ export const ProductCarousel = () => {
         <CarouselItem>
           <div className="grid grid-cols-4 gap-4">
             <img
+              loading="lazy"
               src="https://via.placeholder.com/100"
               alt="Product Grid Image"
               className="aspect-square w-full"
             />
             <img
+              loading="lazy"
               src="https://via.placeholder.com/100"
               alt="Product Grid Image"
               className="aspect-square w-full"
             />
             <img
+              loading="lazy"
               src="https://via.placeholder.com/100"
               alt="Product Grid Image"
               className="aspect-square w-full"
             />
             <img
+              loading="lazy"
+              src="https://via.placeholder.com/100"
+              alt="Product Grid Image"
+              className="aspect-square w-full"
+            />
+          </div>
+        </CarouselItem>
+
+        <CarouselItem>
+          <div className="grid grid-cols-4 gap-4">
+            <img
+              loading="lazy"
+              src="https://via.placeholder.com/100"
+              alt="Product Grid Image"
+              className="aspect-square w-full"
+            />
+            <img
+              loading="lazy"
+              src="https://via.placeholder.com/100"
+              alt="Product Grid Image"
+              className="aspect-square w-full"
+            />
+            <img
+              loading="lazy"
+              src="https://via.placeholder.com/100"
+              alt="Product Grid Image"
+              className="aspect-square w-full"
+            />
+            <img
+              loading="lazy"
               src="https://via.placeholder.com/100"
               alt="Product Grid Image"
               className="aspect-square w-full"
