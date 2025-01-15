@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface ServiceItemProps {
   name: string;
   description: string;
@@ -14,9 +16,12 @@ export const ServiceItem = ({
   return (
     <div className="space-y-4 mx-auto z-0" key={key}>
       <div className="h-72">
-        <img
+        <Image
           src={image}
-          loading="lazy"
+          alt="service image"
+          width={500}
+          height={500}
+          loading="eager"
           className="h-full w-full object-cover bg-contain bg-center rounded-md"
         />
       </div>
