@@ -1,26 +1,22 @@
 import { Section } from "@/components/reusables/page-section";
 import { ProductGridItem } from "./components";
-import NavLink from "@/components/reusables/nav-links";
+import { PRODUCTS } from "@/constants/config";
 
 export default function Products() {
   return (
     <main className="h-full">
       {/* Page Head */}
-      <section className="w-full min-h-[250px] grid place-items-center bg-slate-900 text-white">
-        <h1>What We Sell</h1>
-      </section>
+      <div className="font-semibold md:text-4xl text-3xl w-full text-center pt-4 lg:pt-8">
+        What We Sell
+      </div>
 
       {/* Product Grid */}
       <Section>
-        <div className="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {[...Array(8)].map((_, idx) => (
-            <NavLink key={idx} href="/products/1">
-              <ProductGridItem
-                name="Product 1"
-                price={300}
-                img="https://via.placeholder.com/100"
-              />
-            </NavLink>
+        <div className="grid gap-16 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-10">
+          {PRODUCTS.map((product, index) => (
+            <div>
+              <ProductGridItem key={index} {...product} />
+            </div>
           ))}
         </div>
       </Section>

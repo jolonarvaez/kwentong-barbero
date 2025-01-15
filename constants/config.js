@@ -77,3 +77,41 @@ export const SERVICES = {
     },
   ],
 };
+
+export const PRODUCTS = [
+  {
+    name: "Umbrella",
+    price: 350,
+    image: "/products/umbrella.png",
+  },
+  {
+    name: "Water Tubler",
+    price: 350,
+    image: "/products/water_tumbler.png",
+  },
+  {
+    name: "Enamel Mug",
+    price: 300,
+    image: "/products/enamel_mug.png",
+  },
+  {
+    name: "After Shave",
+    price: 325,
+    image: "/products/after_shave.png",
+  },
+  {
+    name: "Pomade",
+    price: 275,
+    image: "/products/pomade.png",
+  },
+  {
+    name: "Shirt",
+    price: 300,
+    image: "/products/shirt.png",
+  },
+  {
+    name: "Tote",
+    price: 400,
+    image: "/products/tote.png",
+  },
+];
