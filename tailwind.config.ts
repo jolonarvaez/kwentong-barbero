@@ -58,6 +58,7 @@ const config = {
         },
         "dark-blue": "#000614",
         "gold": "#A38748",
+        "whtie-bg": "#FAFAFA",
       },
       borderRadius: {
         lg: "var(--radius)",

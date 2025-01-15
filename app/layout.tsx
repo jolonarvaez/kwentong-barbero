@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col min-h-screen">
+      <body className="flex flex-col min-h-screen bg-whtie-bg">
         <section className="sticky top-0 w-full z-40">
           <Navbar />
         </section>
