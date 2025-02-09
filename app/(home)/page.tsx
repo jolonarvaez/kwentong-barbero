@@ -14,7 +14,7 @@ export default function Home() {
     <main className="h-full">
       {/* Masthead */}
       <Section className="bg-[url('/landing-page.png')] bg-no-repeat bg-cover bg-center">
-        <div className="h-[720px] flex justify-center items-center">
+        <div className="h-screen -mt-[150px] flex justify-center items-center">
           <div className="flex flex-col items-center gap-5 text-white">
             <img
               className=""
@@ -93,16 +93,20 @@ export default function Home() {
             </p>
           </div>
           <div className="w-full">
-            <img
-              src="./our-story/exceptional-1.jpg"
-              className="w-full h-full "
+            <Image
+              src="/our-story/exceptional-1.jpg"
+              width={355}
+              height={450}
+              className="w-full h-full object-cover bg-contain bg-center md:max-h-[400px]"
               alt=""
             />
           </div>
           <div className="w-full">
-            <img
-              src="./our-story/emilio.jpg"
-              className="w-full h-full object-cover"
+            <Image
+              src="/our-story/emilio.jpg"
+              width={355}
+              height={450}
+              className="w-full h-full object-cover bg-contain bg-center md:max-h-[400px]"
               alt=""
             />
           </div>
@@ -117,7 +121,14 @@ export default function Home() {
       <Section className="bg-dark-blue text-center py-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 text-white ">
           <div className="flex flex-col space-y-5">
-            <img loading="lazy" src="./legacy.png" alt="legacy" />
+            <Image
+              width={400}
+              height={450}
+              loading="lazy"
+              src="/legacy.png"
+              alt="legacy"
+              className="w-full"
+            />
             <h2
               className="font-bold"
               style={{
@@ -140,7 +151,14 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col space-y-5">
-            <img loading="lazy" src="./craftsmanship.png" alt="craftsmanship" />
+            <Image
+              width={400}
+              height={450}
+              loading="lazy"
+              src="/craftsmanship.png"
+              alt="craftsmanship"
+              className="w-full"
+            />
             <h2
               className="font-bold"
               style={{
@@ -162,7 +180,15 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col space-y-5">
-            <img loading="lazy" src="./vintage.png" alt="vintage" />
+            <Image
+              width={400}
+              height={450}
+              loading="lazy"
+              src="/vintage.png"
+              alt="vintage"
+              className="w-full"
+            />
+
             <h2
               className="font-bold"
               style={{
@@ -211,45 +237,6 @@ export default function Home() {
           {locations.map((location: any, index: any) => (
             <Locations key={index} {...location} />
           ))}
-        </div>
-      </Section>
-
-      {/* What We Sell */}
-      <Section>
-        <div className="flex flex-col items-center gap-6 mb-10">
-          <h2
-            className="font-bold"
-            style={{
-              fontSize: "3.625rem",
-            }}
-          >
-            What We Sell
-          </h2>
-        </div>
-        <div className="flex flex-wrap justify-center gap-6 ">
-          <ProductCard
-            imageSrc="https://via.placeholder.com/300"
-            productName="Product 1"
-            price="300"
-          />
-          <ProductCard
-            imageSrc="https://via.placeholder.com/300"
-            productName="Product 1"
-            price="300"
-          />
-          <ProductCard
-            imageSrc="https://via.placeholder.com/300"
-            productName="Product 1"
-            price="300"
-          />
-          <ProductCard
-            imageSrc="https://via.placeholder.com/300"
-            productName="Product 1"
-            price="300"
-          />
-        </div>
-        <div className="flex flex-wrap justify-center">
-          <LinkButton href="/">View All</LinkButton>
         </div>
       </Section>
 
