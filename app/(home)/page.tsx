@@ -14,7 +14,7 @@ export default function Home() {
     <main className="h-full">
       {/* Masthead */}
       <Section className="bg-[url('/landing-page.png')] bg-no-repeat bg-cover bg-center">
-        <div className="h-screen -mt-[150px] flex justify-center items-center">
+        <div className="h-screen -mt-[50px] flex justify-center items-center">
           <div className="flex flex-col items-center gap-5 text-white">
             <img
               className=""
@@ -68,16 +68,8 @@ export default function Home() {
                   height: "5.313rem",
                 }}
               />
-              <h2
-                className="font-bold"
-                style={{
-                  fontSize: "2.875rem",
-                }}
-              >
-                Our Story
-              </h2>
+              <div className="text-5xl font-bold">Our Story</div>
             </div>
-
             <p
               style={{
                 fontSize: "1.125rem",
@@ -94,7 +86,7 @@ export default function Home() {
           </div>
           <div className="w-full">
             <Image
-              src="/our-story/exceptional-1.jpg"
+              src="/our-story/storefront.jpg"
               width={355}
               height={450}
               className="w-full h-full object-cover bg-contain bg-center md:max-h-[400px]"
@@ -119,7 +111,7 @@ export default function Home() {
 
       {/* 3 Desciption */}
       <Section className="bg-dark-blue text-center py-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 text-white ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-white ">
           <div className="flex flex-col space-y-5">
             <Image
               width={400}
@@ -129,14 +121,7 @@ export default function Home() {
               alt="legacy"
               className="w-full"
             />
-            <h2
-              className="font-bold"
-              style={{
-                fontSize: "2.875rem",
-              }}
-            >
-              Legacy
-            </h2>
+            <div className="text-4xl font-bold">Legacy</div>
             <p>
               Richard was getting his haircut at his old Session Road barbershop
               when his barber mentioned the shop was closing. The business was
@@ -159,14 +144,7 @@ export default function Home() {
               alt="craftsmanship"
               className="w-full"
             />
-            <h2
-              className="font-bold"
-              style={{
-                fontSize: "2.875rem",
-              }}
-            >
-              Craftsmanship
-            </h2>
+            <div className="text-4xl font-bold">Craftsmanship</div>
             <p>
               Craftsmanship thrives with a blend of seasoned old-timer barbers
               adept at classic cuts and young, innovative barbers specializing
@@ -189,14 +167,7 @@ export default function Home() {
               className="w-full"
             />
 
-            <h2
-              className="font-bold"
-              style={{
-                fontSize: "2.875rem",
-              }}
-            >
-              Vintage
-            </h2>
+            <div className="text-4xl font-bold">Vintage</div>
             <p>
               Kwentong Barbero Barbershop exudes a hyperstylish vintage vibe
               with its 1940s barber chairs, black and white checkerboard floor,
@@ -210,7 +181,8 @@ export default function Home() {
       </Section>
 
       {/* Our Locations */}
-      <Section className="mt-10">
+    
+      <Section className="py-10">
         <div
           className="flex flex-col items-center gap-6 mb-10"
           id="our-locations"
@@ -223,14 +195,7 @@ export default function Home() {
               height: "11rem",
             }}
           />
-          <h2
-            className="font-bold"
-            style={{
-              fontSize: "3.625rem",
-            }}
-          >
-            Our Locations
-          </h2>
+          <div className="text-5xl font-bold">Our Locations</div>
         </div>
 
         <div className="flex flex-wrap justify-center gap-6 text-white">
