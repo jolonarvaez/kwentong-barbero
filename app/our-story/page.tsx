@@ -155,7 +155,7 @@ export default function OurStory() {
               height={1000}
               alt="our-story-3"
               loading="lazy"
-              src="/our-story/exceptional-1.jpg"
+              src="/our-story/service-1.jpg"
               className="w-full object-cover bg-center max-h-[450px]"
             />
             <Image
@@ -163,7 +163,7 @@ export default function OurStory() {
               height={1000}
               alt="our-story-4"
               loading="lazy"
-              src="/our-story/exceptional-3.jpg"
+              src="/our-story/service-2.jpg"
               className="w-full object-cover bg-center max-h-[450px]"
             />
           </div>

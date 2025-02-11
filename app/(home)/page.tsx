@@ -87,8 +87,8 @@ export default function Home() {
           <div className="w-full">
             <Image
               src="/our-story/storefront.jpg"
-              width={355}
-              height={450}
+              width={1000}
+              height={1000}
               className="w-full h-full object-cover bg-contain bg-center md:max-h-[400px]"
               alt=""
             />
@@ -96,8 +96,8 @@ export default function Home() {
           <div className="w-full">
             <Image
               src="/our-story/emilio.jpg"
-              width={355}
-              height={450}
+              width={1000}
+              height={1000}
               className="w-full h-full object-cover bg-contain bg-center md:max-h-[400px]"
               alt=""
             />
@@ -114,12 +114,12 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-white ">
           <div className="flex flex-col space-y-5">
             <Image
-              width={400}
-              height={450}
+              width={1000}
+              height={1000}
               loading="lazy"
               src="/legacy.png"
               alt="legacy"
-              className="w-full"
+              className="w-full max-h-[450px]"
             />
             <div className="text-4xl font-bold">Legacy</div>
             <p>
@@ -137,12 +137,12 @@ export default function Home() {
 
           <div className="flex flex-col space-y-5">
             <Image
-              width={400}
-              height={450}
+              width={1000}
+              height={1000}
               loading="lazy"
               src="/craftsmanship.png"
               alt="craftsmanship"
-              className="w-full"
+              className="w-full max-h-[450px]"
             />
             <div className="text-4xl font-bold">Craftsmanship</div>
             <p>
@@ -159,12 +159,12 @@ export default function Home() {
 
           <div className="flex flex-col space-y-5">
             <Image
-              width={400}
-              height={450}
+              width={1000}
+              height={1000}
               loading="lazy"
               src="/vintage.png"
               alt="vintage"
-              className="w-full"
+              className="w-full max-h-[450px]"
             />
 
             <div className="text-4xl font-bold">Vintage</div>
@@ -181,7 +181,7 @@ export default function Home() {
       </Section>
 
       {/* Our Locations */}
-    
+
       <Section className="py-10">
         <div
           className="flex flex-col items-center gap-6 mb-10"
