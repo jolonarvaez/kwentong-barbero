@@ -86,7 +86,7 @@ export default function Navbar() {
               width={512}
               height={512}
               style={{
-                width: 90,
+                width: 120,
                 height: "auto",
               }}
             />
@@ -117,23 +117,20 @@ export default function Navbar() {
             </svg>
           </SheetTrigger>
           <SheetContent className="w-screen !max-w-screen-xl">
-            <SheetHeader>
-              {/* <SheetTitle>Are you absolutely sure?</SheetTitle> */}
-              <SheetDescription>
-                <div className="flex flex-col">
-                  <SheetClose asChild>
-                    <NavLink href="/">Home</NavLink>
-                  </SheetClose>
-                  {links.map((link) => (
-                    <div key={link.href}>
-                      <SheetClose asChild>
-                        <NavLink href={link.href}>{link.title}</NavLink>
-                      </SheetClose>
-                    </div>
-                  ))}
-                </div>
-              </SheetDescription>
-            </SheetHeader>
+            <div className="flex flex-col">
+              <SheetClose asChild>
+                <NavLink href="/" className="my-2 text-2xl">
+                  Home
+                </NavLink>
+              </SheetClose>
+              {links.map((link) => (
+                <SheetClose asChild key={link.href}>
+                  <NavLink className="my-2 text-2xl" href={link.href}>
+                    {link.title}
+                  </NavLink>
+                </SheetClose>
+              ))}
+            </div>
           </SheetContent>
         </Sheet>
       </div>
