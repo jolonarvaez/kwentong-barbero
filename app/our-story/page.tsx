@@ -1,4 +1,5 @@
 import { Section, Title } from "./components";
+import Image from "next/image";
 export default function OurStory() {
   return (
     <main className="h-full">
@@ -7,12 +8,12 @@ export default function OurStory() {
           <div className="flex justify-center items-center">
             <img
               loading="lazy"
-              className="my-28"
+              className="my-10"
               src="./kb-patch-1-white.png"
               alt="kb-logo"
               style={{
                 objectFit: "contain",
-                height: "25rem",
+                height: "15rem",
               }}
             />
           </div>
@@ -35,10 +36,12 @@ export default function OurStory() {
         <Section>
           <div className="sm:space-y-4 space-y-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <img
-                loading="lazy"
-                src="./our-story/humble.jpg"
-                className="w-full  object-cover bg-center max-h-[350px] mx-auto"
+              <Image
+                src="/our-story/humble.jpg"
+                width={1000}
+                height={1000}
+                alt="our-story-1"
+                className="object-cover bg-center h-full w-full max-h-[350px]"
               />
               <div className="sm:space-y-4 space-y-6">
                 <Title> Humble beginnings and vision</Title>
@@ -115,10 +118,13 @@ export default function OurStory() {
             the services come at a price that won't break the bank, which has
             come to be the norm in other swanky salons.
           </p>
-          <img
+          <Image
+            width={1000}
+            height={1000}
+            alt="our-story-2"
             loading="lazy"
             className="w-full max-h-[450px] object-cover"
-            src="./our-story/vintage2.jpg"
+            src="/our-story/vintage2.jpg"
           />
         </div>
       </Section>
@@ -144,15 +150,21 @@ export default function OurStory() {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-            <img
+            <Image
+              width={1000}
+              height={1000}
+              alt="our-story-3"
               loading="lazy"
-              src="./our-story/exceptional-1.jpg"
-              className="w-full md:max-w-[400px] object-cover bg-center max-h-[450px]"
+              src="/our-story/exceptional-1.jpg"
+              className="w-full object-cover bg-center max-h-[450px]"
             />
-            <img
+            <Image
+              width={1000}
+              height={1000}
+              alt="our-story-4"
               loading="lazy"
-              src="./our-story/exceptional-3.jpg"
-              className="w-full md:max-w-[400px] object-cover bg-center max-h-[450px]"
+              src="/our-story/exceptional-3.jpg"
+              className="w-full object-cover bg-center max-h-[450px]"
             />
           </div>
         </div>
