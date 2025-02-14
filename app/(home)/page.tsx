@@ -76,15 +76,23 @@ export default function Home() {
               }}
               className="text-center sm:text-left"
             >
-              Kwentong Barbero isn't just a place for quick haircuts—it's a home
-              where gentlemen enjoy relaxation, engaging conversations, and
-              timeless charm. Founded by Richard and Marissa Narvaez in Baguio
-              City, this nostalgic barbershop blends modern grooming with
-              old-world hospitality, drawing visitors seeking a memorable
-              experience since its debut in September 2002.
+              Kwentong Barbero isn't just for quick haircuts—it's a home for
+              relaxation, engaging conversations, and timeless charm. Founded by
+              Richard and Marissa Narvaez in Baguio City, the idea sparked when
+              Richard's barber on Session Road mentioned the shop was closing
+              and asked if he was interested in buying it. This small talk led
+              Richard to conceptualize a first-class traditional full-service
+              barbershop, a novel concept in the city. Since its debut in
+              September 2002, this nostalgic barbershop has blended modern
+              grooming with timeless hospitality, earning a reputation as an
+              "old school" barbershop. By "old," we mean traditional, classic,
+              special, and personal. Despite being imitated, the original shop
+              remains genuine in its services and has never been equaled by
+              others. It's the barbershop that first elevated the grooming
+              experience for every gentleman in the city.
             </p>
           </div>
-          <div className="w-full">
+          <div className="w-full flex flex-col justify-center">
             <Image
               src="/our-story/storefront.jpg"
               width={1000}
@@ -93,7 +101,7 @@ export default function Home() {
               alt=""
             />
           </div>
-          <div className="w-full">
+          <div className="w-full flex flex-col justify-center">
             <Image
               src="/our-story/emilio.jpg"
               width={1000}
@@ -123,15 +131,17 @@ export default function Home() {
             />
             <div className="text-4xl font-bold">Legacy</div>
             <p>
-              Richard was getting his haircut at his old Session Road barbershop
-              when his barber mentioned the shop was closing. The business was
-              up for sale, and in typical barbershop fashion—small talk turned
-              into big ideas. Now, after twenty-two years, Kwentong Barbero
-              stands as a "throwback" barbershop offering modern and classy hair
-              services, while honoring a gentler era of family-owned shops and
-              personalized service. With two shops in Baguio City, one in
-              Urdaneta City, and exciting plans brewing for a new venture,
-              Kwentong Barbero continues to grow and innovate.
+              <span className="italic">Kwentong Barbero</span> is a "throwback"
+              barbershop offering modern and classy hair services while honoring
+              the era of family-owned shops and personalized service. With three
+              shops in Baguio City and one in Urdaneta City,{" "}
+              <span className="italic">Kwentong Barbero</span>
+              has grown and innovated since its debut in September 2002. It
+              blends modern grooming with timeless hospitality, earning a
+              reputation as an "old school" barbershop—traditional, classic,
+              special, and personal. Despite imitations, the original shop
+              remains unmatched, setting the standard for elevating the grooming
+              experience for every gentleman in the city.
             </p>
           </div>
 
@@ -169,12 +179,16 @@ export default function Home() {
 
             <div className="text-4xl font-bold">Vintage</div>
             <p>
-              Kwentong Barbero Barbershop exudes a hyperstylish vintage vibe
-              with its 1940s barber chairs, black and white checkerboard floor,
-              subway tiles, brick walls, and nostalgic film posters, reminiscent
-              of the Prohibition Era. Despite its quaint gentleman’s club
-              appearance, it warmly welcomes ladies and children, creating a
-              comforting neighborhood shop atmosphere.
+              <span className="italic">Kwentong Barbero Barbershop</span> exudes
+              a hyper-stylish vintage vibe with its 1940s barber chairs,
+              black-and-white checkerboard floor, subway tiles, and brick walls
+              reminiscent of the Prohibition Era. The authentic charm creates a
+              comforting neighborhood shop atmosphere, making you feel welcome
+              the moment you step in. The interior is calming and neat, with the
+              fresh, clean scent of a traditional barbershop. This vintage feel
+              highlights the tenured and professional reputation of the barbers,
+              offering a nostalgic escape that combines timeless elegance with
+              modern grooming.
             </p>
           </div>
         </div>

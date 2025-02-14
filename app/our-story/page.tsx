@@ -60,7 +60,7 @@ export default function OurStory() {
                   envisioned a throwback barber shop that would offer hair
                   services both current and classy, while paying homage to a
                   more genteel time of family-owned shops and service with a
-                  personal touch.{" "}
+                  personal touch.
                 </p>
               </div>
             </div>
@@ -108,15 +108,15 @@ export default function OurStory() {
         <div className="sm:space-y-4 space-y-6">
           <Title>Vintage Barbershop</Title>
           <p>
-            With its black and white checkerboard floor, subway tiles, brick
-            walls, and film posters evoking the Prohibition Era, Kwentong
-            Barbero exudes a hyper stylish vintage vibe akin to a cozy
-            neighborhood shop. Adding to its charm are original 1940s Koken
-            barber chairs, a piece of history cherished by enthusiasts. The
-            branch at SM City Baguio proudly showcases these iconic chairs,
-            renowned for their durability and classic design. The best part is
-            the services come at a price that won't break the bank, which has
-            come to be the norm in other swanky salons.
+            With its black and white checkerboard floor, subway tiles and brick
+            walls, evoking the Prohibition Era, Kwentong Barbero exudes a hyper
+            stylish vintage vibe akin to a cozy neighborhood shop. Adding to its
+            charm are original 1940s Koken barber chairs, a piece of history
+            cherished by enthusiasts. The branch at SM City Baguio proudly
+            showcases these iconic chairs, renowned for their durability and
+            classic design. The best part is the services come at a price that
+            won't break the bank, which has come to be the norm in other swanky
+            salons.
           </p>
           <Image
             width={1000}
@@ -139,14 +139,14 @@ export default function OurStory() {
               kneading to loosen tight spots and dissolve stress. Like any
               self-respecting salon,{" "}
               <span className="italic">Kwentong Barbero</span> offers the
-              obligatory hair dye, hot oil and hair treatment
-            </p>
-            <p>
-              But its authenticity as a traditional barber shop lies in the
-              other services reserved for unkempt dudes and shaven gentlemen
-              alike. Any man sick of plastic razors can book a hot-towel
-              straight-razor shave. The services menu includes other exciting
-              combo packages with price points that don't offend.
+              obligatory hair dye, hot oil and hair treatment.
+              <p>
+                But its authenticity as a traditional barber shop lies in the
+                other services reserved for unkempt dudes and shaven gentlemen
+                alike. Any man sick of plastic razors can book a hot-towel
+                straight-razor shave. The services menu includes other exciting
+                combo packages with price points that don't offend.
+              </p>
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
