@@ -140,13 +140,13 @@ export default function OurStory() {
               self-respecting salon,{" "}
               <span className="italic">Kwentong Barbero</span> offers the
               obligatory hair dye, hot oil and hair treatment.
-              <p>
-                But its authenticity as a traditional barber shop lies in the
-                other services reserved for unkempt dudes and shaven gentlemen
-                alike. Any man sick of plastic razors can book a hot-towel
-                straight-razor shave. The services menu includes other exciting
-                combo packages with price points that don't offend.
-              </p>
+            </p>
+            <p>
+              But its authenticity as a traditional barber shop lies in the
+              other services reserved for unkempt dudes and shaven gentlemen
+              alike. Any man sick of plastic razors can book a hot-towel
+              straight-razor shave. The services menu includes other exciting
+              combo packages with price points that don't offend.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">

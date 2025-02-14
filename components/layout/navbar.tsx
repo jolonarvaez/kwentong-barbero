@@ -119,15 +119,15 @@ export default function Navbar() {
           <SheetContent className="w-screen !max-w-screen-xl">
             <div className="flex flex-col">
               <SheetClose asChild>
-                <NavLink href="/" className="my-2 text-2xl">
+                <a href="/" className="my-2 text-2xl">
                   Home
-                </NavLink>
+                </a>
               </SheetClose>
               {links.map((link) => (
                 <SheetClose asChild key={link.href}>
-                  <NavLink className="my-2 text-2xl" href={link.href}>
+                  <a className="my-2 text-2xl" href={link.href}>
                     {link.title}
-                  </NavLink>
+                  </a>
                 </SheetClose>
               ))}
             </div>

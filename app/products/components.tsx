@@ -17,7 +17,7 @@ export const ProductGridItem = ({ name, price, image }: ProductGridItemProps) =>
         width={300}
         height={300}
       />
-      <div className="space-y-2">
+      <div className="space-y-2 text-center">
         <div className="text-xl">{name}</div>
         <p>P{price}.00</p>
       </div>
