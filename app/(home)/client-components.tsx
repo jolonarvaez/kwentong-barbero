@@ -3,7 +3,8 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-
+import { Toaster } from "@/components/ui/toaster";
+import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -36,6 +37,7 @@ const contactFormSchema = z.object({
 });
 
 export const ContactForm = () => {
+  const { toast } = useToast();
   // 1. Define your form.
   const form = useForm<z.infer<typeof contactFormSchema>>({
     resolver: zodResolver(contactFormSchema),
@@ -49,10 +51,28 @@ export const ContactForm = () => {
   });
 
   // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof contactFormSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof contactFormSchema>) {
+    const formData = {
+      ...values,
+      access_key: process.env.NEXT_PUBLIC_FORM_API_KEY,
+    };
+
+    try {
+      await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      toast({
+        description: "Your message has been sent successfully!",
+      });
+      form.reset();
+    } catch (error) {
+      console.error("Error:", error);
+    }
   }
 
   return (
@@ -132,6 +152,7 @@ export const ContactForm = () => {
           Submit
         </Button>
       </form>
+      <Toaster />
     </Form>
   );
 };
