@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col min-h-screen bg-whtie-bg">
+        <Head>
+          <link rel="icon" href="/favicon.ico" sizes="any" />
+        </Head>
         <section className="sticky top-0 w-full z-40">
           <Navbar />
         </section>
