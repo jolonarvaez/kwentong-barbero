@@ -4,7 +4,7 @@
     "name": "SM City Baguio",
     "photo": "url(./sm-baguio.png)",
     "mobile": "+639457958065",
-    "landline": "(074) 4463555",
+    "landline": "(074)4463555",
     "times": ["Mon - Thurs | 10am - 9pm", "Fri - Sun | 10am - 10pm"],
     "link": "https://maps.app.goo.gl/Jkw8VPhKtbjhSnkf7"
   },
@@ -13,7 +13,7 @@
     "name": "Holiday Park Hotel",
     "photo": "url(./holiday-park-hotel.png)",
     "mobile": "+639175587222",
-    "landline": "(074) 4228983",
+    "landline": "(074)4228983",
     "times": ["Mon - Sun | 9am - 8pm"],
     "link": "https://maps.app.goo.gl/yEXYCcFrp94vvqjKA"
   },
@@ -22,7 +22,7 @@
     "name": "SM City Urdaneta Central",
     "photo": "url(./sm-urdaneta.png)",
     "mobile": "+639457956986",
-    "landline": "(075) 5233757",
+    "landline": "(075)5233757",
     "times": ["Mon - Thurs | 10am - 9pm", "Fri - Sun | 10am - 10pm"],
     "link": "https://maps.app.goo.gl/wRrYXBgkPiEJwb4E8"
   },
