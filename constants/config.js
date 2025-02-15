@@ -85,7 +85,7 @@ export const PRODUCTS = [
     image: "/products/umbrella.png",
   },
   {
-    name: "Water Tubler",
+    name: "Water Tumbler",
     price: 350,
     image: "/products/water_tumbler.png",
   },
