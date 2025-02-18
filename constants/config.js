@@ -95,6 +95,11 @@ export const PRODUCTS = [
     image: "/products/enamel_mug.png",
   },
   {
+    name: "Coffee Cup",
+    price: 500,
+    image: "/products/coffee_cup.png",
+  },
+  {
     name: "After Shave",
     price: 325,
     image: "/products/after_shave.png",
