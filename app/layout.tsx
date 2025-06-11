@@ -8,8 +8,22 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kwentong Barbero",
-  description: "A shop that shears, shaves & shines so you stay sharp",
+  title: "Kwentong Barbero | Premium Barbershop in the Philippines",
+  description:
+    "Kwentong Barbero is your go-to barbershop for expert haircuts, shaves, and grooming services. Experience top-notch service, classic styles, and a relaxing atmosphere. Book your appointment today!",
+  keywords: [
+    "barbershop",
+    "haircut",
+    "shave",
+    "grooming",
+    "men's haircut",
+    "Philippines barbershop",
+    "Kwentong Barbero",
+    "hair styling",
+    "men's grooming",
+    "classic barbershop",
+  ],
+  metadataBase: new URL("https://kwentongbarbero.com"),
 };
 
 export default function RootLayout({
