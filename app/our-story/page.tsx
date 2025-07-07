@@ -27,7 +27,7 @@ export default function OurStory() {
               There are barber shops that give record-time haircuts, and there
               are those that offer a whole experience of relaxation and good
               conversation within delightful surroundings.{" "}
-              <span className="italic">Kwentong Barbero</span>
+              <span className="italic">Kwentong Barbero </span>
               falls into the latter subset and has become a venue for male
               day-cations as memorable as its name.
             </p>
@@ -93,9 +93,7 @@ export default function OurStory() {
             on November 26 when the mall first opened in the City of Pines. On
             March 16, 2016, another branch opened at Holiday Park Hotel branch.
             Two years later, on May 3,{" "}
-            <span className="italic">
-              <span className="italic">Kwentong Barbero</span>
-            </span>
+              <span className="italic">Kwentong Barbero </span>
             opened its doors at SM City Urdaneta Central. When the pandemic hit,
             the shop closed on March 16, 2020 but three months later, on June 7,
             2020, the barbershop was again in full swing. On October 15, 2022,
